@@ -50,21 +50,28 @@ const buildNavBar = () => {
 const buildHeader = () => {
 
     const header = document.createElement('div');
+    header.classList.add('header');
+
+    const nameContainer = document.createElement('div');
+    header.appendChild(nameContainer);
+
     const logo = new Image();
     logo.src = Logo;
+    logo.classList.add('logo');
+    nameContainer.appendChild(logo);
         
     const tagLine = document.createElement('p');
-    tagLine.textContent = 'The best Dillas';
+    tagLine.textContent = 'Super Dilla - The best Dillas';
+    nameContainer.appendChild(tagLine);
 
-    header.appendChild(logo);
-    header.appendChild(tagLine);
+    const navBar = buildNavBar();
+    header.appendChild(navBar);
 
     return header;
 }
 
 const docBody = document.querySelector('#content');
 docBody.appendChild(buildHeader());
-docBody.appendChild(buildNavBar());
 docBody.appendChild(homePageDOM);
 docBody.appendChild(contactPageDOM);
 docBody.appendChild(menuPageDOM);

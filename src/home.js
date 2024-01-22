@@ -1,7 +1,7 @@
 const buildPage = () => {
 
     const abstract = document.createElement('p');
-    abstract.textContent = "Supper Dilla has been chefin' up the best darn quesadillas you've ever had since 2024," +
+    abstract.textContent = "Super Dilla has been chefin' up the best darn quesadillas you've ever had since 2024." +
                             " We offer dillas for breakfast lunch and dinner with all sorts of fillings and toppigns!" +
                             " Come on in and try one of our delicious dillas today!";
 

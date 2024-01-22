@@ -42,6 +42,7 @@ const buildPage = () => {
     const page = document.createElement('div');
     page.appendChild(abstract);
     page.appendChild(hoursContainer);
+    page.classList.add('main-content');
     return page;
 };
 

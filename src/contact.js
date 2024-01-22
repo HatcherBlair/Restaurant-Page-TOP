@@ -1,6 +1,7 @@
 const buildPage = () => {
     const page = document.createElement('div');
     page.classList.add('hidden');
+    page.classList.add('main-content');
 
     const contactContainer = document.createElement('div');
     page.appendChild(contactContainer);

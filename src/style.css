@@ -17,6 +17,15 @@ body {
     margin: auto;
 }
 
+.main-content {
+    text-align: center;
+    color: var(--text);
+}
+
+ul {
+    list-style: none;
+}
+
 .hidden {
     display: none;
 }

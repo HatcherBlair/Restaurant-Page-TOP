@@ -1,6 +1,7 @@
 const buildPage = () => {
     const page = document.createElement('div');
     page.classList.add('hidden');
+    page.classList.add('main-content');
 
     const header = document.createElement('h2');
     header.textContent = 'MENU';
